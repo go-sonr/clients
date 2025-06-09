@@ -62,8 +62,8 @@ type client struct {
 	api *rpc.HttpApi
 }
 
-// NewIPFS creates a new IPFS client
-func NewIPFS() (IPFS, error) {
+// NewIPFSClient creates a new IPFS client
+func NewIPFSClient() (IPFS, error) {
 	api, err := rpc.NewLocalApi()
 	if err != nil {
 		return nil, err
